@@ -1,0 +1,25 @@
+import model.Klant;
+
+
+public class Video {
+
+	public static void main(String[]args){
+		Klant k1= new Klant(1,"Jansen");
+		Klant k2= new Klant(2,"Peters");
+		Klant k3= new Klant(3,"Jansen");
+		
+		if(k1 == k2){
+			System.out.println("k1 == k2");
+		}
+		else {
+			System.out.println("k1 != k2");
+		}
+	
+	if(k1 == k3){
+		System.out.println("k1 == k3");
+	}
+	else {
+		System.out.println("k1 != k3");
+	}
+}
+}

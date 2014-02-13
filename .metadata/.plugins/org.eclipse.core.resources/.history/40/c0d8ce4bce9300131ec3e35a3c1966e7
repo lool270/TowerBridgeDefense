@@ -1,0 +1,46 @@
+package model;
+
+public class Klant {
+	private int klantnummer;
+	private String achternaam;
+	
+	public Klant(){
+		
+	}
+	public Klant(int klantnummer, String achternaam){
+		this.klantnummer = klantnummer;
+		this.achternaam = achternaam;		
+	}
+	
+	public int getKlantnummer(){
+		return klantnummer;
+	}
+	
+	public String getAchternaam(){
+		return achternaam;
+	}
+	
+	public void setKlantnr(int klantnummer){
+		this.klantnummer = klantnummer;
+	}
+	
+	public void setAchternaam(String achternaam){
+		this.achternaam = achternaam;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "De klant heet" + achternaam + " en heeft klantnummer: " + klantnummer;
+	}
+	
+}

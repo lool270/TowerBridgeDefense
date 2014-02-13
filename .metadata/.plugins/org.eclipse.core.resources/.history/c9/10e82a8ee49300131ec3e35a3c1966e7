@@ -1,0 +1,76 @@
+package model;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class KlantTest {
+
+	Klant k1 = new Klant(1,"Dave1");
+	Klant k2 = new Klant(2,"Dave2");
+	@Test
+	public void testHashCode() {
+	
+	}
+
+	@Test
+	public void testKlant() {
+		Klant k3 = new Klant();
+		assertNotNull(k3);
+		KlantTest k4 = null;
+		assertNull(k4);
+		
+	}
+
+	@Test
+	public void testKlantIntString() {
+		Klant k3 = new Klant(3,"kees");
+		assertNotNull(k3);
+		KlantTest k4 = null;
+		assertNull(k4);
+	}
+
+	@Test
+	public void testGetKlantnummer() {
+		assertEquals(1, k1.getKlantnummer());
+		assertNotSame(null, k1.getKlantnummer());
+	}
+
+	@Test
+	public void testAchternaam() {
+		assertEquals("Dave1", k1.getAchternaam());
+		assertNotSame(null, k2.getAchternaam(), k1.getAchternaam());
+	}
+
+	@Test
+	public void testSetKlantnr() {
+		
+	}
+
+	@Test
+	public void testSetAchternaam() {
+		
+	}
+
+	@Test
+	public void testEqualsObject() {
+		Klant k3 = new Klant(1,"Dave1");
+		Klant k4 = k3;
+		Object object = new Object();
+		assertTrue(k1.equals(k3));		
+		assertTrue(k3.equals(k1));	
+		assertTrue(k3.equals(k3));
+		assertFalse(k1.equals(k2));
+		assertFalse(k2.equals(k1));
+		assertFalse(k1.equals(object));
+		assertTrue(k3.equals(k4));
+	}
+
+	@Test
+	public void testToString() {
+		String boodschap = "De klant heet Ali en heeft klantnummer: 1";
+	System.out.println(k1);
+	assertequals(k1.getBoodschap.toString);
+	}
+
+}

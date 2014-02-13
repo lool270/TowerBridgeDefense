@@ -1,0 +1,8 @@
+package nl.xnagames.towerbridgedefense.screens;
+
+import com.badlogic.gdx.Screen;
+
+public class SplashScreen implements Screen
+{
+	
+}

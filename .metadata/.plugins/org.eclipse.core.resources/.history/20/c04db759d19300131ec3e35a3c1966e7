@@ -1,0 +1,14 @@
+package model;
+
+public class Game {
+	private int gamenr;
+	private String uitgiftdatum;
+	private String Titel;
+	private Boolean geschiktvoorkinderen;
+	
+	public Game(){}
+	
+	public Game (int, String,String ,Boolean){
+		
+	}
+}

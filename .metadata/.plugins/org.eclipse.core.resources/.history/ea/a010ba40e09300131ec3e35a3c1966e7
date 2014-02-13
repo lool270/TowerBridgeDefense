@@ -1,0 +1,66 @@
+package model;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class KlantTest {
+
+	Klant k1 = new Klant(1,"Dave1");
+	Klant k2 = new Klant(2,"Dave2");
+	@Test
+	public void testHashCode() {
+	
+	}
+
+	@Test
+	public void testKlant() {
+		Klant k3 = new Klant();
+		assertNotNull(k3);
+		KlantTest k4 = null;
+		assertNull(k4);
+		
+	}
+
+	@Test
+	public void testKlantIntString() {
+		Klant k3 = new Klant(3,"kees");
+		assertNotNull(k3);
+		KlantTest k4 = null;
+		assertNull(k4);
+	}
+
+	@Test
+	public void testGetKlantnummer() {
+		assertEquals(1, k1.getKlantnummer());
+		assertNotSame(null, k1.getKlantnummer());
+	}
+
+	@Test
+	public void testAchternaam() {
+		assertEquals("Dave1", k1.getAchternaam());
+		assertNotSame(null, k2.getAchternaam(), k1.getAchternaam());
+	}
+
+	@Test
+	public void testSetKlantnr() {
+		assertEquals("1", k1.getKlantnr());
+		assertNotSame(null, k2.getKlantnr(), k1.getKlantnummer());
+	}
+
+	@Test
+	public void testSetAchternaam() {
+		assertEquals()
+	}
+
+	@Test
+	public void testEqualsObject() {
+
+	}
+
+	@Test
+	public void testToString() {
+		
+	}
+
+}

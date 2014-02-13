@@ -1,0 +1,52 @@
+package model;
+
+public class Klant {
+	private int klantnummer;
+	private String achternaam;
+	
+	public Klant(){
+		
+	}
+	public Klant(int klantnummer, String achternaam){
+		this.klantnummer = klantnummer;
+		this.achternaam = achternaam;		
+	}
+	
+	public int getKlantnummer(){
+		return klantnummer;
+	}
+	
+	public String getAchternaam(){
+		return achternaam;
+	}
+	
+	public void setKlantnr(int klantnummer){
+		this.klantnummer = klantnummer;
+	}
+	
+	public void setAchternaam(String achternaam){
+		this.achternaam = achternaam;
+	}
+	@Override
+	public boolean equals(Object object) {
+		if (object instanceof Klant){
+			Klant klant =(Klant) object;
+			if(klant.klantnummer == this.klantnummer){
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "De klant heet" + achternaam + " en heeft klantnummer: " + klantnummer;
+	}
+	
+}

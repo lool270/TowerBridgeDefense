@@ -1,0 +1,38 @@
+package model;
+
+public class Game {
+	private int gamenr;
+	private String uitgiftdatum;
+	private String Titel;
+	private Boolean geschiktvoorkinderen;
+	
+	public Game(){}
+	
+	public Game (int gamenr,String uitgiftdatum,String titel, 
+			Boolean geschiktvoorkinderen){
+	}
+		public int gamenr(){
+			return gamenr;
+	}
+		public String uitgiftdatum(){
+			return uitgiftdatum;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
+
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+}

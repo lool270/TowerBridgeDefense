@@ -1,0 +1,17 @@
+package model;
+
+public class Klant {
+	private int klantnummer;
+	private String achternaam;
+	
+	public Klant(){
+		
+	}
+	public Klant(int klantnummer, String achternaam){
+		this.klantnummer = klantnummer;
+		this.achternaam = achternaam;		
+	}
+	public int getKlantnummer(){
+		return klantnummer;
+	}
+}
