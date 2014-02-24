@@ -1,0 +1,28 @@
+package model;
+
+import java.util.ArrayList;
+public class Patienten {
+
+	private ArrayList<Patient> patienten = new ArrayList<>();
+	
+	public Patienten(){
+		
+	}
+public ArrayList<Patient>getPatienten(){
+	return patienten;
+	}
+public void voegPatientToe(Patient patient){
+	patienten.add(patient);
+}
+public int geefPatientnr(Patient patient){
+	for(Patient p:patienten){
+		if(p.equals(patient)){
+			return patient.getPatientnr();
+		}
+	}
+	return -1;
+}
+public int geefPatientnrBijNaam(String naam){
+	
+}
+}

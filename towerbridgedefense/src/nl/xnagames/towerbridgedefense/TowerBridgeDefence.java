@@ -1,5 +1,6 @@
 package nl.xnagames.towerbridgedefense;
 
+import nl.xnagames.towerbridgedefense.screens.GameScreen;
 import nl.xnagames.towerbridgedefense.screens.SplashScreen;
 
 import com.badlogic.gdx.Game;
@@ -9,15 +10,24 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class TowerBridgeDefence extends Game {	
 	
-	private SpriteBatch batch;
+	//fields
+	//private SpriteBatch batch;
 	private SplashScreen splashScreen;
+	private GameScreen gamescreen;
 	
 	
+	//properties
+	public GameScreen getGameScreen()
+	{
+		return this.gamescreen;
+	}
 	@Override
 	public void create() 
 	{
 		this.splashScreen = new SplashScreen(this);
 		this.setScreen(this.splashScreen);
+		this.gamescreen = new GameScreen(this);
+		//this.setScreen(this.splashScreen);
 	}
 
 	@Override
@@ -52,5 +62,13 @@ public class TowerBridgeDefence extends Game {
 	public void resume() 
 	{
 		super.resume();
+	}
+
+	public GameScreen getGamescreen() {
+		return gamescreen;
+	}
+
+	public void setGamescreen(GameScreen gamescreen) {
+		this.gamescreen = gamescreen;
 	}
 }

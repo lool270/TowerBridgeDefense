@@ -1,0 +1,67 @@
+package model;
+
+public class Patient {
+  
+ private int patientnummer;
+ private String patientnaam;
+ private String patienttel;
+ 
+ public Patient(){
+  
+ }
+ 
+ public Patient(int patientnummer, String patientnaam, String patienttel){
+  this.patientnummer = patientnummer;
+  this.patientnaam = patientnaam;
+  this.patienttel = patienttel;
+ }
+ 
+ public int getPatientnummer(){
+  return patientnummer;
+ }
+ 
+ public String getPatientnaam(){
+  return patientnaam;
+  
+ }
+ 
+ public String getPatienttel(){
+  return patienttel;
+ }
+
+ 
+ public void setPatientnummer(int patientnummer) {
+  this.patientnummer = patientnummer;
+ }
+
+ public void setPatientnaam(String patientnaam) {
+  this.patientnaam = patientnaam;
+ }
+
+ public void setPatienttel(String patienttel) {
+  this.patienttel = patienttel;
+ }
+
+ @Override
+ public boolean equals(Object object) {
+  if(object instanceof Patient){
+   Patient patient = (Patient) object;
+   if(patient.patientnummer == this.patientnummer){
+    return true;
+   }
+  }
+  return false;
+
+ }
+
+ @Override
+ public int hashCode() {
+  return 37 * patientnummer;
+ }
+
+ @Override
+ public String toString() {
+  return "De patient heet " + patientnaam + "met tel: " + patienttel + " en zijn/haar patientnummer is " + patientnummer;
+ }
+ 
+}
